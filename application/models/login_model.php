@@ -1,7 +1,7 @@
 <?php
 	class Login_model extends CI_Model {
 		// table name
-		private $tbl_name = 'users';
+		private $tbl_name = 'admin';
 
 		function getuser($options = array()) {
 			if(isset($options['username']))
@@ -9,7 +9,7 @@
 			if(isset($options['password']))
 				$this->db->where('password',$options['password']);
 
-			$query = $this->db->get($this->tab);
+			$query = $this->db->get($this->tbl_name);
 			return $query->result();
 		}
 

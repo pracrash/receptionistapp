@@ -168,6 +168,12 @@ hr {
 	margin-left: 70px;
 }
 
+.post .entry .label {
+	float: left;
+	width: 180px;
+}
+
+
 .post .meta {
 	margin-left: 70px;
 	font-weight: bold;
@@ -188,14 +194,15 @@ hr {
 }
 
 #sidebar ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 5px 0px 0px 28px;
 	list-style: none;
 }
 
-#sidebar li ul {
-	margin-bottom: 1.8em;
-	list-style: none;
+#sidebar ul li {
+	font-weight: bold;
+	margin-bottom: 5px;
+	list-style: circle;
 }
 
 #sidebar li li {
